@@ -3,10 +3,10 @@ import React from 'react'
 import CardOne from './CardOne'
 import CardTwo from './CardTwo'
 
-const Hero = () => {
+const Hero = ({click}) => {
   return (
     <div>
-    <div className='px-2 py-2 lg:px-10 lg:py-10 md:px-10 md:py-10 justify-center items-center'>
+    <div className={`${click ? 'lg:ml-80 md:ml-60' : ''} px-2 py-2 lg:px-10 lg:py-10 md:px-10 md:py-10 justify-center items-center duration-300`}>
     
      <div className='py-5'>
         <h1 className='text-3xl font-bold'>Hey, Name! </h1>
